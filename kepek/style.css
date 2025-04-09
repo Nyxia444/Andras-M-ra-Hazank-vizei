@@ -1,0 +1,43 @@
+*{
+box-sizing: border-box;
+}
+header{
+    background-color: aquamarine;
+}
+body{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+img{
+    width: 100%;
+    padding: 3px;
+    border: 1px solid rgb(100, 77, 77);
+
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "h h h h"
+    "as a a f";
+}
+header{
+    grid-area: h;
+}
+article{
+    grid-area: a;
+}
+footer{
+    grid-area: f;
+}
+aside{
+    grid-area: as;
+}
+@media  screen and (max-width :500px) {
+    main{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+}
